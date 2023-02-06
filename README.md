@@ -1,4 +1,4 @@
-# nice-node-website
+# speedometer-website
 
 ### Installation
 

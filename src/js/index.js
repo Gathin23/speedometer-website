@@ -1,5 +1,5 @@
 import '../sass/index.scss';
-import './accordion-carousel';
+// import './accordion-carousel';
 import $ from 'jquery';
 
 const body = document.querySelector('body');
@@ -88,4 +88,11 @@ $(document).click(function(event) {
   if (!($(event.target).hasClass('downloadContainer') || $(event.target).hasClass('downloadButton orange') || $(event.target).hasClass('down'))) {
     $(".downloadMenu").removeClass('visible');
   }
+});
+
+$("#dockerRunCmdCopy").click(function() {
+  navigator.clipboard.writeText("docker run ghcr.io/nicenode/speedometer");
+});
+$("#podmanRunCmdCopy").click(function() {
+  navigator.clipboard.writeText("podman run ghcr.io/nicenode/speedometer");
 });

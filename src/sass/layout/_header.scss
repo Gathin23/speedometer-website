@@ -33,14 +33,14 @@ header {
     backdrop-filter: blur(30px);
     transition: all 0.4s;
 
-    .logo {
-      @include media-breakpoint-up(md){
-        width: 132px;
-        height: 30px;
-        background-size: 132px 30px;
-        background-image: var(--logoMinimizedImage);
-      }
-    }
+    // .logo {
+    //   @include media-breakpoint-up(md){
+    //     width: 132px;
+    //     height: 30px;
+    //     background-size: 132px 30px;
+    //     background-image: var(--logoMinimizedImage);
+    //   }
+    // }
 
     nav {
       font-size: 20px;
@@ -62,12 +62,12 @@ header {
     background-size: 30px 30px;
     width: 30px;
     height: 30px;
-    @include media-breakpoint-up(sm){
-      background-image: var(--logoImage);
-      background-size: 152px 32px;
-      width: 152px;
-      height: 32px;
-    }
+    // @include media-breakpoint-up(sm){
+    //   background-image: var(--logoImage);
+    //   background-size: 152px 32px;
+    //   width: 152px;
+    //   height: 32px;
+    // }
     @include media-breakpoint-up(md){
       // padding: 16px 48px;
     }

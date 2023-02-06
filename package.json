@@ -1,5 +1,5 @@
 {
-  "name": "nice-node-website",
+  "name": "speedometer-website",
   "version": "1.0.0",
   "description": "A light foundation for your next frontend project based on webpack.",
   "scripts": {
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NiceNode/nice-node-website.git"
+    "url": "git+https://github.com/NiceNode/speedometer-website.git"
   },
   "author": "NiceNode",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NiceNode/nice-node-website/issues"
+    "url": "https://github.com/NiceNode/speedometer-website/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
