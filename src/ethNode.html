@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Speedometer</title>
-  <meta name=“title” content=“Speedometer”>
-  <meta name="description" content="Test performance, internet, and more of your Docker and containers setup">
-  <meta content="Speedometer" property="og:title" />
-  <meta content="Test your the speed of your Docker, computer, and containers setup" property="og:description" />
+  <title>Speedometer - Eth Node</title>
+  <meta name="title" content="Speedometer: Eth Node">
+  <meta name="description" content="One command to answer Can I run an Ethereum Node?">
+  <meta content="Speedometer: Eth Node" property="og:title" />
+  <meta content="Test your the speed of your setup to see if you can run a node" property="og:description" />
   <!-- increment the query parameter number when changing the image (prevents unwanted caching) -->
-  <meta content="https://raw.githubusercontent.com/NiceNode/speedometer-website/main/src/images/application-dark.png?3" property="og:image" />
-  <meta content="Speedometer" property="twitter:title" />
-  <meta content="Test performance, internet, and more of your Docker and containers setup" property="twitter:description" />
-  <meta content="https://raw.githubusercontent.com/NiceNode/speedometer-website/main/src/images/application-dark.png?3" property="twitter:image" />
+  <meta content="https://raw.githubusercontent.com/NiceNode/speedometer-website/main/src/images/application-eth-node-dark-uncropped.png?1" property="og:image" />
+  <meta content="Speedometer: Eth Node" property="twitter:title" />
+  <meta content="One command to answer Can I run an Ethereum Node?" property="twitter:description" />
+  <meta content="https://raw.githubusercontent.com/NiceNode/speedometer-website/main/src/images/application-eth-node-dark-uncropped.png?1" property="twitter:image" />
   <meta property="og:type" content="website" />
   <meta content="summary_large_image" name="twitter:card" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏱️</text></svg>">
@@ -41,25 +41,56 @@
   <main>
     <section id="top">
       <div class="headerTextContainer">
-        <h1 class="headline-primary">Speed test your Docker setup.</h1>
-        <div class="headline-secondary dynapuff">the easy way.</div>
+        <h1 class="headline-primary">Can I run an Ethereum node?</h1>
+        <!-- <div class="headline-secondary dynapuff">One command to check</div> -->
         <!-- <h2 class="header">Docker and container setups can .</div> -->
       </div>
+      <div class="commands">
+        <div class="cmdContainer">
+          <div class="cmdText">
+            docker run -it ghcr.io/nicenode/speedometer -r eth-node
+          </div>
+          <div id="dockerRunEthNodeCmdCopy" class="cmdCopyBtn">📋</div>
+        </div>
+        <div class="learn"><a href="https://podman-desktop.io/">Podman</a> or <a href="https://www.docker.com/">Docker</a> required</div>
+      </div>
       <div class="graphic">
-        <div class="application">
+        <div class="application ethNode">
           <!-- <div class="comingSoon"></div> -->
         </div>
       </div>
       <div class="commands">
-        <div class="cmdContainer"><div class="cmdText">docker run ghcr.io/nicenode/speedometer</div><div id="dockerRunCmdCopy" class="cmdCopyBtn">📋</div></div>
-        <div class="cmdContainer"><div class="cmdText">podman run ghcr.io/nicenode/speedometer</div><div id="podmanRunCmdCopy" class="cmdCopyBtn">📋</div></div>
+        <div class="cmdContainer">
+          <div class="cmdText">
+            docker run -it ghcr.io/nicenode/speedometer -r eth-node
+          </div>
+          <div id="dockerRunEthNodeCmdCopy" class="cmdCopyBtn">📋</div>
+        </div>
+        <div class="learn">Podman</div>
+        <br/>
+        <div class="cmdContainer">
+          <div class="cmdText">
+            podman run -t ghcr.io/nicenode/speedometer -r eth-node
+          </div>
+          <div id="podmanRunEthNodeCmdCopy" class="cmdCopyBtn">📋</div>
+        </div>
   
-        <div class="learn">Output JSON</div>
+        <div class="learn">Output JSON to use in code</div>
         <br/>
-        <div class="cmdContainer smallCmdContainer"><div class="cmdText">docker run ghcr.io/nicenode/speedometer -f json</div><div id="dockerRunCmdCopy" class="cmdCopyBtn">📋</div></div>
-        <div class="learn">More</div>
+        <div class="cmdContainer smallCmdContainer">
+          <div class="cmdText">
+            docker run ghcr.io/nicenode/speedometer -r eth-node -f json
+          </div>
+          <div id="dockerRunEthNodeJsonCmdCopy" class="cmdCopyBtn">📋</div>
+        </div>
+        <div class="learn">Other commands</div>
         <br/>
-        <div class="cmdContainer smallCmdContainer"><div class="cmdText">docker run ghcr.io/nicenode/speedometer --help</div><div id="dockerRunCmdCopy" class="cmdCopyBtn">📋</div></div>
+        <div class="cmdContainer smallCmdContainer">
+          <div class="cmdText">
+            docker run -it ghcr.io/nicenode/speedometer --help
+          </div>
+          <div id="dockerRunHelpCmdCopy" class="cmdCopyBtn">📋</div>
+        </div>
         <div class="learn">
           Learn more on <a class="link" target="_blank" rel="noopener noreferrer" href="https://github.com/NiceNode/speedometer/">our Github</a>
         </div>
@@ -142,7 +173,7 @@
         </div>
       </div>
     </section> -->
-    <!-- <section id="requirements">
+    <section id="requirements">
       <h3><span class="slant">Node</span><br>Requirements</h3>
       <div class="table">
         <div class="table-row">
@@ -177,7 +208,7 @@
         </span>
         Individual client recommendations may vary. We provide suggestions while setting up your node.
       </div>
-    </section> -->
+    </section>
     <!-- <section id="download">
       <h3 class="downloadHeader">Run a node and become part of a global revolution.</h3>
       <div class="releaseContainer">
@@ -325,7 +356,8 @@
   <footer>
     <div class="logoContainer">
       <!-- <div class="logo"></div> -->
-      <div class="text">speedometer</div>
+      <div class="text">Speedometer</div>
+      <div class="learn center">developed by <a href="https://nicenode.xyz">NiceNode</a></div>
     </div>
     <div class="social-links">
         <!-- <a class="button small" href="https://twitter.com/nicenodeapp" target="_blank" rel="noopener noreferrer">Twitter</a> -->

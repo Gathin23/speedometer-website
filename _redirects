@@ -1,0 +1,10 @@
+# Redirects from what the browser requests to what we serve
+/ethNode        /ethNode.html
+/node           /ethNode.html
+/whyisntmynodesyncing  /ethNode.html
+/runanode  /ethNode.html
+/canIRunANode  /ethNode.html
+/canirunanode  /ethNode.html
+/canItRunANode  /ethNode.html
+/canitrunanode  /ethNode.html
+/*              /index.html

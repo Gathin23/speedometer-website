@@ -96,3 +96,18 @@ $("#dockerRunCmdCopy").click(function() {
 $("#podmanRunCmdCopy").click(function() {
   navigator.clipboard.writeText("podman run ghcr.io/nicenode/speedometer");
 });
+
+$("#dockerRunEthNodeCmdCopy").click(function() {
+  navigator.clipboard.writeText("docker run -t ghcr.io/nicenode/speedometer -r eth-node");
+});
+$("#podmanRunEthNodeCmdCopy").on('click', function() {
+  navigator.clipboard.writeText("podman run -t ghcr.io/nicenode/speedometer -r eth-node");
+});
+
+$("#dockerRunEthNodeJsonCmdCopy").click(function() {
+  navigator.clipboard.writeText("docker run ghcr.io/nicenode/speedometer -r eth-node -f json");
+});
+$("#dockerRunHelpCmdCopy").on('click', function() {
+  navigator.clipboard.writeText("docker run -it ghcr.io/nicenode/speedometer --help");
+});
+
