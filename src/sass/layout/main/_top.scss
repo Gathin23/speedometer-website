@@ -78,7 +78,8 @@
     }
     @include media-breakpoint-up(md){
       padding-top: 20px;
-      height: 835px;
+      padding-bottom: 20px;
+      height: 720px;
       background-position: center;
       // background-size: cover;
     }
@@ -86,6 +87,9 @@
       background-size: contain;
     }
 
+    .application.ethNode {
+      background-image: var(--applicationImageEthNode);
+    }
     .application {
       // margin-top: 83px;
       width: 100%;

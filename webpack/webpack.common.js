@@ -21,10 +21,18 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
-      patterns: [{ from: Path.resolve(__dirname, '../public'), to: 'public' }],
+      patterns: [
+        { from: Path.resolve(__dirname, '../public'), to: 'public' },
+        // Netlify redirects must be in the published dir
+        "./_redirects"
+      ],
     }),
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html'),
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'ethNode.html',
+      template: Path.resolve(__dirname, '../src/ethNode.html'),
     }),
     new webpack.ProvidePlugin({
       $: "jquery",
